@@ -80,4 +80,18 @@
 
 ![image](https://github.com/user-attachments/assets/6bd61dfa-3264-4b76-9b76-04376e383bac)
 
+## Thiết lập DMZ cho một doanh nghiệp (lab lỗi)
 
+![image](https://github.com/user-attachments/assets/35d40e1b-042e-4b5a-83e1-d218dbc34110)
+
+![image](https://github.com/user-attachments/assets/74b21c43-3c3a-4a75-a504-50a1645ba7b7)
+
+![image](https://github.com/user-attachments/assets/b88466c0-d24e-4ec0-befb-0b753069ca8f)
+
+![image](https://github.com/user-attachments/assets/d500974e-57e2-4f4e-8b8d-c49a832bd1af)
+
+![image](https://github.com/user-attachments/assets/f0c76a4c-871f-4140-afcc-5c719119640f)
+
+![image](https://github.com/user-attachments/assets/66534529-4657-4ecc-ad56-b727dbf51af2)
+
+![image](https://github.com/user-attachments/assets/c4ef5513-9972-4816-9b48-be3a948998ec)
